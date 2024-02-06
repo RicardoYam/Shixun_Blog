@@ -1,0 +1,30 @@
+.nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    color: white;
+    background-color: black;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-logo {
+    padding: 10px;
+}
+
+.nav-logo span {
+    font-size: 60px;
+    letter-spacing: 5px;
+}
+
+.nav ul {
+    display: flex;
+    list-style: none;
+}
+
+.nav a {
+    padding: 10px;
+    color: inherit;
+    text-align: center;
+    text-decoration: none;
+}

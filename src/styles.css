@@ -6,37 +6,35 @@
     padding: 0;
 }
 
-:root {
-    --primaryPurple: #646ff0;
-    --black-1: #646681;
-    --black-2: #585858;
-    --bg-1: #f8f8ff;
-    --bg-2: #ecedf6;
-    --bg-3: #cccdde;
-    --gray-1: #eee;
-    --gray-2: #dedfe1;
-    --black: black;
-    --white: white;
-}
+html, body, #app, #app>div {
+    height: 100%
+  }
 
 html {
     font-size: 30px;
-}
-
-body {
-    width: 100%;
-    min-height: 100vh;
 }
 
 * {
     font-family: Myfont;
 }
 
-.content {
-    display: flex;
-    justify-content: space-between;
+.container {
+    width: 100%;
+    height: 100%;
+    max-width: 100vw;
+    max-height: 100vh;
+    margin: 0 auto;
 }
 
+.header {
+    width: 100%;
+    max-height: 10vh;
+}
+
+.content {
+    width: 100%;
+    max-height: 90vh;
+}
 
 @font-face {
     font-family: Myfont;

@@ -1,14 +1,12 @@
 import React from 'react'
-import Nav from '../components/Nav'
+import Navbar from '../components/Navbar'
 import Gallery from '../components/Gallery'
-import Title from '../components/Title'
 
 function root() {
   return (
     <>
-      <Title></Title>
+      <div className='header'><Navbar /></div>
       <div className='content'>
-        <Nav />
         <Gallery />
       </div>
     </>
