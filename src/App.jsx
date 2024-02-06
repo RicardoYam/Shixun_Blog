@@ -1,12 +1,15 @@
 import React from 'react'
 import './styles.css'
-import Nav from './components/nav'
+import { Routes, Route } from 'react-router-dom'
+import Root from './pages/root.jsx'
 
 function App() {
   return (
     <>
       <div>
-        <Nav/>
+        <Routes>
+          <Route path='/' element={<Root />}></Route>
+        </Routes>
       </div>
     </>
   )
