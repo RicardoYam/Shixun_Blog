@@ -32,6 +32,10 @@ body {
     font-family: Myfont;
 }
 
+.content {
+    display: flex;
+    justify-content: space-between;
+}
 
 
 @font-face {

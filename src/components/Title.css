@@ -1,0 +1,9 @@
+.title {
+    border-style: none none solid none;
+    padding: 10px;
+}
+
+.title span {
+    font-size: 60px;
+    letter-spacing: 5px;
+}
