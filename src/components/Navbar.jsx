@@ -15,7 +15,7 @@ function nav() {
 
   return (
     <header>
-      <span>SHIXUN</span>
+      <span><Link to={'/'}>SHIXUN</Link></span>
       <button
         className="nav-btn"
         onClick={showNavbar}>

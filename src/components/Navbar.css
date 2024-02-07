@@ -14,10 +14,12 @@ header {
     color: var(--textColor);
 }
 
-header span {
+header a {
     padding: 10px;
     font-size: 50px;
     letter-spacing: 5px;
+    text-decoration: none;
+    color: var(--textColor);
 }
 
 nav ul {
