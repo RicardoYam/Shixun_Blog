@@ -1,0 +1,25 @@
+.carditem {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 50px;
+}
+
+.card-introduction {
+    display: flex;
+    flex-direction: column;
+}
+
+@media screen and (max-width: 768px) {
+    .carditem {
+        margin: 10px;
+    }
+
+    .card-introduction > p{
+        display: none;
+    }
+
+    .card-image {
+        margin: 20px;
+    }
+}
