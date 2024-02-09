@@ -24,6 +24,7 @@
     align-items: center;
     justify-content: space-around;
     padding: 50px;
+    padding-bottom: 200px;
 }
 
 .cotent-intro-text {
@@ -31,18 +32,18 @@
     margin-right: 200px;
 }
 
-.content-intro-text-lable > p {
+.lable-text {
     font-size: 16px;
-    padding: 0;
+    padding-top: 10px;
     margin: 0;
 }
-
 
 .content-intro-text-lable a {
     color: #707f7f;
     text-decoration: none;
     position: relative;
     display: inline-block;
+    padding-bottom: 20px;
 }
 
 .content-intro-text-lable a::after {
@@ -56,29 +57,45 @@
     transition: width 0.5s ease-in, left 0.5s ease-in;
 }
 
-.content-intro-text-lable a:hover::after, .content-intro-text-lable a:focus::after {
+.content-intro-text-lable a:hover::after,
+.content-intro-text-lable a:focus::after {
     width: 100%;
     left: 0;
 }
 
-.content-intro-text-lable a:hover, .content-intro-text-lable a:focus {
+.content-intro-text-lable a:hover,
+.content-intro-text-lable a:focus {
     color: #11ee72;
-}
-
-.content-intro-text-lable {
-    padding-bottom: 20px;
 }
 
 .content-intro img {
     width: 100%;
-    padding-bottom: 20px;
 }
 
 .content-intro video {
     width: 30%;
 }
 
-@media screen and (max-width: 1024px)  {
+.content-kubernetes {
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.content-kubernetes img {
+    width: 80%;
+    padding-bottom: 10px;
+}
+
+.content-kub {
+    width: 80%;
+}
+
+@media screen and (max-width: 1024px) {
     .content h1 {
         font-size: 80px;
         margin: 20px;
@@ -92,18 +109,30 @@
     }
 }
 
-@media screen and (max-width: 768px)  {
+@media screen and (max-width: 768px) {
     .banner {
         display: none;
     }
 
     .content-intro {
+        width: 100%;
         padding: 0;
+    }
+
+    .cotent-intro-text {
+        margin: 30px;
     }
 
     video {
         display: none;
     }
 
-    
+    .content-kubernetes img {
+        width: 100%;
+    }
+
+    .content-kubernetes {
+        padding: 30px;
+    }
+
 }

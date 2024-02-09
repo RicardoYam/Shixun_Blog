@@ -36,12 +36,20 @@ function root() {
           <div className="cotent-intro-text">
             <img src="src\assets\images\iceland.jpg" alt="intro-image" />
             <div className="content-intro-text-lable">
-              <p>Shixun.com</p>
+              <div className='lable-text'>Shixun.com</div>
               <span><Link to={"/projects/blog"}>View this project</Link></span>
             </div>
             <p>My personal website, a symphony of React, Spring Boot, and MySQL, is subtly crafted to highlight content, with user-centric design guiding your seamless journey.</p>
           </div>
           <video src="src\assets\videos\fashion.mp4" autoPlay loop muted></video>
+        </div>
+        <div className="content-kubernetes">
+          <img src="src/assets/images/weather-explorer.jpg" alt="kubernetes" />
+          <div className="content-intro-text content-kub">
+            <div className='lable-text'>Kubernetes based microservice weather searching website</div>
+            <span className='content-intro-text-lable'><Link to={"/projects/kubernetes"}>View this project</Link></span>
+            <p>My personal website, a symphony of React, Spring Boot, and MySQL, is subtly crafted to highlight content, with user-centric design guiding your seamless journey.</p>
+          </div>
         </div>
       </div>
     </>
