@@ -35,7 +35,7 @@ function root() {
         </div>
         <div className='content-intro'>
           <div className="cotent-intro-text">
-            <img src="src\assets\images\iceland.jpg" alt="intro-image" />
+            <img src="src\assets\images\logo-banner.png" alt="intro-image" />
             <div className="content-intro-text-lable">
               <div className='lable-text'>Shixun.com</div>
               <span><Link to={"/projects/blog"}>View this project</Link></span>
