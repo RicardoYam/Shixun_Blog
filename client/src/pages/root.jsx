@@ -1,5 +1,6 @@
 import React from 'react'
 import Navbar from '../components/Navbar'
+import Footer from '../components/Footer';
 import './root.css'
 import { IoIosArrowRoundForward } from "react-icons/io";
 import { FaLinkedin, FaGithub } from "react-icons/fa";
@@ -51,6 +52,7 @@ function root() {
             <p>My personal website, a symphony of React, Spring Boot, and MySQL, is subtly crafted to highlight content, with user-centric design guiding your seamless journey.</p>
           </div>
         </div>
+        <Footer></Footer>
       </div>
     </>
   )
