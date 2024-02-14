@@ -1,13 +1,28 @@
 .carditem {
     display: flex;
     flex-direction: row;
-    align-items: center;
     margin: 50px;
 }
 
 .card-introduction {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 4;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    line-height: 1.6;
+    max-height: 6.4em;
+    margin-right: 20px;
+}
+
+.card-image {
     display: flex;
-    flex-direction: column;
+    align-items: center;
+}
+
+.card-image > img {
+    width: 160px;
+    height: 160px;
 }
 
 @media screen and (max-width: 768px) {

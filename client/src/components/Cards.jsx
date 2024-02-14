@@ -5,7 +5,6 @@ function Cards() {
   return (
     <>
       <CardItem />
-      <CardItem />
     </>
   )
 }
