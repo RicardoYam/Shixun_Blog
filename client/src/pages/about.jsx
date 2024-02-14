@@ -10,22 +10,18 @@ function about() {
       <Nav />
       <div className='about-content'>
         <div className="about-title"><p>I'm Shixun.</p></div>
-        <div className='about-education'>
-          <div className="education-item">
-            <img src="src/assets/images/UQ.jpg" alt="UQ logo" />
-            <div className="education-text">
-              <span>Master of Computer Science</span>
-              <p>Feb 2023 - June 2024</p>
+        <div className="about-summary">
+          <div className='summary-avatar'>
+            <img src="src/assets/images/Avatar.jpg" alt="avatar" />
+            <div className='summary-education'>
+              <img src="src/assets/images/University_of_Queensland_(crest).png" alt="uq logo" />
+              <span>Master of Computer Science @UQ</span>
             </div>
           </div>
-          <div className="education-item">
-            <img src="src/assets/images/UQ.jpg" alt="UQ logo" />
-            <div className="education-text">
-              <span>Bachelor of Computer Science</span>
-              <p>Feb 2020 - Dec 2023</p>
-            </div>
+          <div className="summary-content">
+            <h3>I'm a Master of Computer Science Stundet will graduate on Jun 2024.</h3>
+            <p>Over the past 5+ years, </p>
           </div>
-
         </div>
         <div className="about-skills">
           <div className="skill-item java" style={{ '--targetWidth': '100%' }}>Java</div>
