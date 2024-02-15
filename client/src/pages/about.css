@@ -93,13 +93,44 @@
     display: flex;
     justify-content: center;
     animation: fadeIn 3s;
+    margin-bottom: 100px;
 }
 
 .about-tagcloud>div {
     width: 800px;
 }
 
+.about-steps {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
 
+.steps-content {
+    width: 100%;
+    max-width: 1500px;
+    height: 800px;
+    background-color: #4c7cf0;
+    border-radius: 70px;
+}
+
+.content-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.each-step {
+    display: flex;
+    flex-direction: column;
+    padding: 100px 0px 0 0;
+    width: 600px;
+}
+
+.each-step>p {
+    font-size: 21px;
+    letter-spacing: 1px;
+}
 
 @keyframes grow {
     from {
@@ -118,5 +149,92 @@
 
     100% {
         opacity: 1;
+    }
+}
+
+@media screen and (max-width: 1600px) {
+    .about-skills {
+        margin-bottom: 40px;
+    }
+
+    .each-step {
+        padding: 50px
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .about-content {
+        padding: 10px
+    }
+
+    .about-title {
+        font-size: 65px;
+        margin-bottom: 50px;
+    }
+
+    .about-summary {
+        margin-bottom: 30px;
+    }
+
+    .summary-avatar {
+        width: 0;
+        height: 0;
+        visibility: hidden;
+    }
+
+    .summary-avatar>img {
+        visibility: hidden;
+    }
+
+    .summary-education>img {
+        visibility: hidden;
+    }
+
+    .summary-content {
+        margin: 10px;
+    }
+
+    .summary-content>h3 {
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+
+    .summary-content>p {
+        font-size: 14px;
+    }
+
+    .about-skills {
+        height: 200px;
+        margin-bottom: 40px;
+    }
+
+    .skill-item {
+        height: 50px;
+    }
+
+    .about-tagcloud {
+        margin-bottom: 20px;
+    }
+
+    .about-steps {
+        padding: 20px;
+    }
+
+    .steps-content {
+        height: 100%;
+        border-radius: 30px;
+    }
+
+    .content-row {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    .each-step {
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+        width: 100%;
     }
 }

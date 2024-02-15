@@ -5,6 +5,7 @@ import './contact.css'
 import { FaLinkedin, FaGithub } from "react-icons/fa";
 import { SiLeetcode } from "react-icons/si";
 import Footer from '../components/Footer';
+import banner from '/images/banner_about.jpg'
 
 function contact() {
     return (
@@ -15,7 +16,7 @@ function contact() {
             <div className='content-about'>
                 <h2>Hello,</h2>
                 <h2>Let's chat</h2>
-                <img className='banner-about' src="src\assets\images\banner_about.jpg" alt="banner-about" />
+                <img className='banner-about' src={banner} alt="banner-about" />
                 <div className='text-about'>
                     <p>Contact Me!</p>
                     <p>lishixun1219@gmail.com</p>

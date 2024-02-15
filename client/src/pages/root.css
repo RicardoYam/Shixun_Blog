@@ -94,6 +94,12 @@
     width: 80%;
 }
 
+.content-twoprojects {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
 @media screen and (max-width: 1600px) {
     .content h1 {
         font-size: 130px;
@@ -136,6 +142,10 @@
         margin: 30px;
     }
 
+    .content-kub {
+        width: 100%;
+    }
+
     video {
         display: none;
     }
@@ -146,6 +156,11 @@
 
     .content-kubernetes {
         padding: 30px;
+    }
+
+    .content-twoprojects {
+        display: flex;
+        flex-direction: column;
     }
 
 }

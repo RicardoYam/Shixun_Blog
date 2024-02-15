@@ -21,6 +21,8 @@ function Tagcloud() {
         { value: 'Docker', count: 85 },
         { value: 'Redis', count: 5 },
         { value: 'PHP', count: 5 },
+        { value: 'Neural Network', count: 30 },
+        { value: 'Machine Learning', count: 48 },
     ]
 
     return (
