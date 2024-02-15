@@ -4,6 +4,7 @@ import Nav from '../components/Navbar'
 import Footer from '../components/Footer'
 import TagCloud from '../components/Tagcloud'
 import avatar from '/images/Avatar.jpg'
+import uqlogo from '/images/University_of_Queensland_(crest).png'
 
 function about() {
   return (
@@ -15,7 +16,7 @@ function about() {
           <div className='summary-avatar'>
             <img src={avatar} alt="avatar" />
             <div className='summary-education'>
-              <img src="src/assets/images/University_of_Queensland_(crest).png" alt="uq logo" />
+              <img src={uqlogo} alt="uq logo" />
               <span>Master of Computer Science @UQ</span>
             </div>
           </div>
@@ -40,25 +41,25 @@ function about() {
                 <div className='each-step'>
                   <h3>01</h3>
                   <h3>Plan it</h3>
-                  <p>I sketch wireframes and make prototypes. Talking through tactile designs existing in the browser is worth its weight. Design tools only carry you so far; the rest should be realized with a link my team can rally around.</p>
+                  <p>I meticulously plan all my activities, ensuring a perfect balance between study and personal life with a strict daily schedule. This disciplined approach guarantees flawless execution of all my current and future projects, each benefiting from a thoughtfully crafted plan.</p>
                 </div>
                 <div className='each-step'>
                   <h3>02</h3>
                   <h3>Make it</h3>
-                  <p>I sketch wireframes and make prototypes. Talking through tactile designs existing in the browser is worth its weight. Design tools only carry you so far; the rest should be realized with a link my team can rally around.</p>
+                  <p>By strictly adhering to a timetable, I ensure plans are completed ahead of the set deadlines. I efficiently fulfill my responsibilities with proficiency while humbly addressing any shortcomings during the learning process.</p>
                 </div>
               </div>
 
               <div className='content-row'>
                 <div className='each-step'>
                   <h3>03</h3>
-                  <h3>Make it</h3>
-                  <p>I sketch wireframes and make prototypes. Talking through tactile designs existing in the browser is worth its weight. Design tools only carry you so far; the rest should be realized with a link my team can rally around.</p>
+                  <h3>Test it</h3>
+                  <p>Through experiments in real-world scenarios, the project's reliability and stability are validated, identifying potential issues that may arise during practical application.</p>
                 </div>
                 <div className='each-step'>
                   <h3>04</h3>
-                  <h3>Make it</h3>
-                  <p>I sketch wireframes and make prototypes. Talking through tactile designs existing in the browser is worth its weight. Design tools only carry you so far; the rest should be realized with a link my team can rally around.</p>
+                  <h3>Evaluate it</h3>
+                  <p>Refining and optimizing issues within the project, then revisiting the planning phase to establish a complete closed-loop model.</p>
                 </div>
               </div>
             </div>

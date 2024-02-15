@@ -153,6 +153,29 @@
 }
 
 @media screen and (max-width: 1600px) {
+    .about-content {
+        padding: 50px 100px 50px 100px;
+    }
+    
+    .about-title {
+        text-align: center;
+        font-size: 100px;
+        margin-bottom: 100px;
+    }
+
+    .summary-content {
+        margin-left: 200px;
+        width: 900px;
+    }
+    
+    .summary-content>h3 {
+        font-size: 45px;
+    }
+
+    .summary-content>p {
+        font-size: 25px;
+    }
+
     .about-skills {
         margin-bottom: 40px;
     }

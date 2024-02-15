@@ -5,7 +5,7 @@ import './contact.css'
 import { FaLinkedin, FaGithub } from "react-icons/fa";
 import { SiLeetcode } from "react-icons/si";
 import Footer from '../components/Footer';
-import banner from '/images/banner_about.jpg'
+import banner from '/images/banner.jpg'
 
 function contact() {
     return (

@@ -11,8 +11,7 @@ h2 {
 
 .banner-about {
     margin: 50px;
-    width: 900px;
-    height: 1600px;
+    width: 1600px;
 }
 
 .text-about {
@@ -21,7 +20,7 @@ h2 {
     align-items: center;
 }
 
-.text-about > p {
+.text-about>p {
     font-size: 50px;
 }
 
@@ -41,27 +40,54 @@ h2 {
     margin-left: 10px;
 }
 
-.resume > a{
+.resume>a {
     text-decoration: none;
 }
 
 @keyframes fadeIn {
-    0% { opacity: 0; }
-    100% { opacity: 1; }
-  }
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@media screen and (max-width: 1600px) {
+    h2 {
+        font-size: 140px;
+    }
+    
+    .content-about {
+        margin-bottom: 100px;
+    }
+
+    .banner-about {
+        margin: 20px;
+        width: 1200px;
+    }
+
+    .text-about>p {
+        font-size: 30px;
+    }
+}
 
 @media screen and (max-width: 768px) {
     h2 {
         font-size: 75px;
     }
 
-    .banner-about {
-        margin: 20px;
-        width: 450px;
-        height: 600px;
+    .content-about {
+        margin-bottom: 100px;
     }
 
-    .text-about > p {
+    .banner-about {
+        margin: 20px;
+        width: 400px;
+    }
+
+    .text-about>p {
         font-size: 30px;
     }
 }
