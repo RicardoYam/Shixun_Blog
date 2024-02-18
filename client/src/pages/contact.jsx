@@ -1,5 +1,5 @@
 import React from 'react'
-import resume from '../assets/test.txt'
+import resume from '../assets/SHIXUN LI_Resume.pdf'
 import Nav from '../components/Navbar'
 import './contact.css'
 import { FaLinkedin, FaGithub } from "react-icons/fa";
