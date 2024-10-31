@@ -10,6 +10,13 @@
   margin-bottom: 200px;
 }
 
+.about-leetcode {
+  margin-bottom: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .about-summary {
   display: flex;
   display: row;

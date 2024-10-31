@@ -13,6 +13,9 @@ import ims from "/images/ims.png";
 import resume from "../assets/SHIXUN LI_Resume.pdf";
 import Slider from "../components/Slider";
 import arc from "/images/arc.png";
+import ReactPlayer from "react-player";
+import calmpetVideo from "/images/calmpet.mp4";
+import Pokemon from "/images/Pokemon.jpg";
 
 function root() {
   return (
@@ -130,6 +133,64 @@ function root() {
           </div>
         </div>
 
+        <div className="content-twoprojects">
+          <div className="project-item">
+            <div className="project-video">
+              <ReactPlayer
+                url="https://www.youtube.com/watch?v=-ATo4BN_158"
+                width="100%"
+                height="100%"
+                controls={true}
+              />
+            </div>
+            <div className="project-info">
+              <div className="project-info-header">
+                <div className="lable-text">Pigeon</div>
+                <div className="content-intro-text-lable"></div>
+              </div>
+              <p>
+                A real-time chat application built with Next.js and Python
+                Flask, secured with JWT and cryptography methods to ensure
+                secure communication between clients. Using Docker and Terraform
+                to automate the deployment process on AWS.
+              </p>
+            </div>
+          </div>
+
+          <div className="project-item">
+            <div className="project-video">
+              <video
+                src={calmpetVideo}
+                controls
+                style={{
+                  width: "100%",
+                  height: "100%",
+                  borderRadius: "8px",
+                  border: "1px solid #2d2d2d",
+                }}
+              />
+            </div>
+            <div className="project-info">
+              <div className="project-info-header">
+                <div className="lable-text">CalmPet</div>
+                <div className="content-intro-text-lable">
+                  <Link to={"https://github.com/YuyangisCoding/calmPet-final"}>
+                    View this project
+                  </Link>
+                </div>
+              </div>
+              <p>
+                CalmPet aims to ensure every child receives the best quality
+                education by reducing disruptions during classroom transition
+                times and therefore improving the efficiency of learning
+                processes. Project is built with Flutter and Spring Boot for
+                Android and iOS devices, so that teachers and students can use
+                it on the go.
+              </p>
+            </div>
+          </div>
+        </div>
+
         <div className="content-intro">
           <div className="cotent-intro-text">
             <img src={logoBanner} alt="intro-image" />
@@ -150,6 +211,7 @@ function root() {
           </div>
           <video src={houseVideo} autoPlay loop muted></video>
         </div>
+
         <div className="content-kubernetes">
           <img src={kube} alt="kubernetes" />
           <div className="content-intro-text content-kub">
@@ -164,12 +226,30 @@ function root() {
             </span>
             <p>
               This project is a comprehensive, highly scalable, and rapidly
-              deployable weather exploration platform, recognized as one of the
-              top projects in the UQ Cloud Computing course. Utilizing a variety
-              of popular frameworks and technologies such as Vue, Spring Boot,
-              MySQL, Docker, and Kubernetes, it perfectly showcases my expertise
-              and capabilities in full-stack development and DevOps
+              deployable weather exploration platform on Google Cloud Platform
+              (GCP), recognized as one of the top projects in the UQ Cloud
+              Computing course. Utilizing a variety of popular frameworks and
+              technologies such as Vue, Spring Boot, MySQL, Docker, and
+              Kubernetes, it perfectly showcases my expertise and capabilities
+              in full-stack development and DevOps.
             </p>
+          </div>
+        </div>
+        <div className="content-kubernetes">
+          <div className="content-intro">
+            <img src={Pokemon} alt="pokemon" style={{ width: "50%" }} />
+            <div className="cotent-intro-text">
+              <div className="lable-text">Pokemon: Got 2 Find Them All!</div>
+              <span className="content-intro-text-lable">
+                <Link to={"https://github.com/RicardoYam/pokemon"}>
+                  View this project
+                </Link>
+              </span>
+              <p>
+                A minesweeper game built by Python, with a simple and intuitive
+                interface. All Pokémon trainer love this game!
+              </p>
+            </div>
           </div>
         </div>
         <Footer></Footer>

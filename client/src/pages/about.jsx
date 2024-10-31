@@ -5,6 +5,7 @@ import Footer from "../components/Footer";
 import TagCloud from "../components/Tagcloud";
 import avatar from "/images/Avatar.jpg";
 import uqlogo from "/images/University_of_Queensland_(crest).png";
+import LeetCodeCard from "../components/LeetCodeCard";
 
 function about() {
   return (
@@ -57,6 +58,11 @@ function about() {
             <TagCloud />
           </div>
         </div> */}
+
+        <div className="about-leetcode">
+          <h3>LeetCode</h3>
+          <LeetCodeCard />
+        </div>
         <div className="about-tech">
           <div className="tech-list">
             <h3>Languages</h3>
