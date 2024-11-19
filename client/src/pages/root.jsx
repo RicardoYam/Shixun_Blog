@@ -16,6 +16,10 @@ import arc from "/images/arc.png";
 import ReactPlayer from "react-player";
 import calmpetVideo from "/images/calmpet.mp4";
 import Pokemon from "/images/Pokemon.jpg";
+import MeetHome from "/images/meet-home.png";
+import MeetLogin from "/images/meet-login.png";
+import MeetProfile from "/images/meet-profile.png";
+import FlappyBird from "/images/flappy-bird.mp4";
 
 function root() {
   return (
@@ -103,6 +107,34 @@ function root() {
           </div>
         </div>
 
+        <div className="left-content-right-image">
+          <div className="text-content">
+            <div className="lable-text">Meet Community</div>
+            <span className="content-intro-text-lable">
+              <Link
+                to={"https://meet-community.top"}
+                style={{ marginRight: "20px", color: "#11ee72" }}
+              >
+                Visit Now
+              </Link>
+              <Link to={"https://github.com/RicardoYam/Meet"}>
+                View this project
+              </Link>
+            </span>
+            <p>
+              Meet is an open-source blogging and life-sharing community where
+              people can connect and engage with one another. Powered by robust
+              features and deployed on AWS, it integrates a reliable Java Spring
+              Boot backend with an engaging React frontend. Visit our site and
+              register today to start your journey!
+            </p>
+          </div>
+
+          <div className="image-content">
+            <Slider images={[MeetLogin, MeetHome, MeetProfile]} />
+          </div>
+        </div>
+
         <div className="content-kubernetes">
           <Slider images={[ims, arc]} />
           <div className="content-intro-text content-kub">
@@ -114,7 +146,7 @@ function root() {
                 to={"https://demoims.com"}
                 style={{ marginRight: "20px", color: "#11ee72" }}
               >
-                Demo
+                Visit Now
               </Link>
               <Link
                 to={"https://github.com/RicardoYam/InventoryManagementSystem"}
@@ -191,25 +223,24 @@ function root() {
           </div>
         </div>
 
-        <div className="content-intro">
-          <div className="cotent-intro-text">
-            <img src={logoBanner} alt="intro-image" />
-            <div className="content-intro-text-lable">
-              <div className="lable-text">shixunli.com</div>
-              <span>
-                <Link to={"https://github.com/RicardoYam/Shixun_blog"}>
-                  View this project
-                </Link>
-              </span>
+        <div className="content-kubernetes">
+          <div className="content-intro">
+            <video
+              src={FlappyBird}
+              autoPlay
+              loop
+              muted
+              style={{ width: "50%" }}
+            />
+            <div className="cotent-intro-text">
+              <div className="lable-text">Flappy Bird</div>
+              <span className="content-intro-text-lable"></span>
+              <p>
+                A Flappy Bird game built with C# and Unity, with a simple and
+                intuitive interface.
+              </p>
             </div>
-            <p>
-              Yes! My personal website is also one of my projects, built with
-              React and deployed on AWS S3, with a custom domain name,
-              certificate managed by AWS Route 53, and the content is cached by
-              AWS CloudFront.
-            </p>
           </div>
-          <video src={houseVideo} autoPlay loop muted></video>
         </div>
 
         <div className="content-kubernetes">
@@ -247,7 +278,7 @@ function root() {
               </span>
               <p>
                 A minesweeper game built by Python, with a simple and intuitive
-                interface. All Pokémon trainer love this game!
+                GUI features. All Pokémon trainer love this game!
               </p>
             </div>
           </div>
